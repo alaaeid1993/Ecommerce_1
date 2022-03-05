@@ -1,0 +1,32 @@
+
+  #sidebar {
+    min-width: 270px;
+    background: #3445b4;
+    color: #fff;
+    }
+
+#sidebar h1 .logo span {
+    font-size: 14px;
+    color: #44bef1;
+    display: block; }
+    
+    #sidebar ul li a {
+        padding: 10px 0;
+        font-weight:500;
+    margin: 5px;
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    text-decoration: none;
+}
+/* span{
+    margin-left: 60px;
+} */
+
+#sidebar ul li a:hover {
+    color: #fff; }
+
+#sidebar ul li.active > a {
+    background: transparent;
+    color: #fff; }
+   
