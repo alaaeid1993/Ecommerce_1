@@ -1,3 +1,4 @@
+
 <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
         <div class="p-4">
@@ -24,27 +25,53 @@
                 <a href="#"><span class="bi bi-clipboard2-plus m-1"></span>Blog</a>
                 </li>
             </ul>
-            <div class="mb-5">
-                <h3 class="h6 mb-3">Subscribe for newsletter</h3>
-                <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                        <div class="icon"><span class="icon-paper-plane"></span></div>
-                        <input type="text" class="form-control" placeholder="Enter Email Address">
-                    </div>
-                </form>
-            </div>
-            <div class="footer">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <h3 class="h6 mb-3">Subscribe for newsletter</h3>
+            <form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+                    <div class="icon"><span class="icon-paper-plane"></span></div>
+                    <input type="text" class="form-control" placeholder="Enter Email Address" style="margin-bottom: 20px;background-color: transparent;color:gray;border:2px solid rgb(46, 133, 155);">
+                </div>
+            </form>
+        </div>
+        <div class="footer m-5 ">
+                <div class="mb-5"> 
+                      <div class="dropup ">
+                          <span style="margin:0 10px 0 20px;">Alaa Eid</span>
+                        <i type="button" class="bi bi-person-circle " data-bs-toggle="dropdown" aria-expanded="false">
+                          
+                        </i>
+                        <div aria-labelledby="dropdownBasic3"class="dropdown-menu ">
+                            <div>
+                                <a href="#" class="dropdown-item py-1">
+                                    <i class="bi bi-ui-checks-grid mr-2" style="margin-right: 7px;"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <a href="#" class="dropdown-item py-1">
+                                    <i class="bi bi-telegram" style="margin-right: 7px;"></i>
+                                    <span>Chat</span>
+                                </a>
+                                <a href="#" class="dropdown-item py-1">
+                                    <i class="bi bi-tools mr-2" style="margin-right: 7px;"></i>
+                                    <span>Settings</span>
+                                </a>
+                              <div class="dropdown-divider">
+        
+                              </div>
+                              <a href="#" class="dropdown-item">
+                                  <i class="bi bi-lock-fill mr-2" style="margin-right: 7px;"></i>
+                                  <span>Logout</span>
+                                </a>
+                            </div>
+                          </div>
+                      </div>
             </div>
 
         </div>
     </nav>
-    <!-- Page Content  -->
-    <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Sidebar #05</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="content" class="p-5 p-md- pt-5" style="background-color: rgb(32, 28, 28);color: wheat;">
+        <div class="row" id="fixed">
+            
+        </div>
+        <app-main></app-main>
     </div>
 </div>

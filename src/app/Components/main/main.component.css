@@ -1,0 +1,15 @@
+.product:hover .opacity-none
+{
+  opacity: 1;
+}
+.product:hover .product-img {
+  opacity: .75;
+
+}
+.opacity-none{
+  opacity: 0;
+}
+#down:hover{
+content: "Download";
+transform: scale(1.1);
+}
