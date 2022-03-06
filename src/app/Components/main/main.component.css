@@ -1,15 +1,76 @@
-.product:hover .opacity-none
-{
+
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition-duration: .6s;
+    cursor: pointer;
+    color: #750909;
+    font-weight: 500;
+  }
+  .card:hover{
+transform: scale(1.1);
+background-color: black;
+color: #b49403;
+  }
+
+  .card .text {
+    position: absolute;
+    bottom: 80px;
+    height: 120px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    transform: rotate(90deg);
+    transform-origin: 0 100px;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .card:hover .text {
+    opacity: 0.8;
+    transform: rotate(0deg);
+  }
+  img{
+      width:200px;
+      height: 220px;
+  }
+.card:hover img{
+    opacity: .3;
+}  
+.card .views {
+  position:absolute;
+  opacity: 0;
+  left: 15px;
+    top: 80px;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: #8b2463;
+    color: #fff;
+    border-radius: 5px;
+    transform: translate(-100px, 0);
+    transition: all 0.5s ease 0.15s;
+  }
+  .card .watch {
+    position:absolute;
+    opacity: 0;
+    left: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    box-shadow: 3px 3px #611818;
+    top: 40px;
+    padding: 3px 10px;
+    color: rgb(250, 212, 0);
+    transform: translate(0px, 140px);
+    transition: all 0.5s ease 0.15s;
+  }
+  .card:hover .views,
+.card:hover .watch {
+  transform: translate(0);
   opacity: 1;
 }
-.product:hover .product-img {
-  opacity: .75;
-
-}
-.opacity-none{
-  opacity: 0;
-}
-#down:hover{
-content: "Download";
-transform: scale(1.1);
+i{
+    color: #ffd207;
 }
