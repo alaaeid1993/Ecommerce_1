@@ -4,10 +4,10 @@
         <div class="p-4">
             <ul class="list-unstyled components mb-5">
                 <li class="active">
-                    <a href="#"><span class="bi bi-house-door m-1"></span> Home</a>
+                    <a routerLink="main"><span class="bi bi-house-door m-1"></span> Home</a>
                 </li>
                 <li>
-                    <a href="#"><span class="bi bi-film m-1"></span> Movies</a>
+                    <a routerLink="product"><span class="bi bi-film m-1"></span> Movies</a>
                 </li>
                 <li>
                 <a href="#"><span class="bi bi-display m-1"></span> Series</a>
@@ -81,6 +81,6 @@
         <div class="row" id="fixed">
             
         </div>
-        <app-main></app-main>
-    </div>
+            
+        <router-outlet></router-outlet>
 </div>

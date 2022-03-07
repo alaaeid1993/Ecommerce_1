@@ -14,6 +14,18 @@ import { ErrorComponent } from './Components/error/error.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { SlideShowComponent } from './Components/slide-show/slide-show.component';
 import { ColorDirective } from './color.directive';
+import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+let routes:Routes=[
+{path:"Error",component:ErrorComponent},
+{path:"slideshow",component:SlideShowComponent},
+{path:"main",component:MainComponent},
+{path:"product",component:ProductComponent},
+
+]
+
 
 @NgModule({
   declarations: [
@@ -31,7 +43,9 @@ import { ColorDirective } from './color.directive';
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
