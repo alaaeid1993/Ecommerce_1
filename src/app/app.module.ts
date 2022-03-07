@@ -13,6 +13,7 @@ import { LogInComponent } from './Components/log-in/log-in.component';
 import { ErrorComponent } from './Components/error/error.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { SlideShowComponent } from './Components/slide-show/slide-show.component';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SlideShowComponent } from './Components/slide-show/slide-show.component
     LogInComponent,
     ErrorComponent,
     ContactComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    ColorDirective
     ],
   imports: [
     BrowserModule,
