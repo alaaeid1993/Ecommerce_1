@@ -2,15 +2,64 @@
 <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
         <div class="p-4">
+            <!-- <!--  ------------------------------------------lang-------------------------------------- -->
+            <div class="d-flex flex-row flex-nowrap ">
+                <div class="dropdown   ms-auto ">
+                    <div id="dropdownMenuButton1" class="btn gap-1 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+                        <i class="bi bi-globe" style="color: aliceblue;"></i>
+                    </div>
+                    <ul class="dropdown-menu z-index-5100   " aria-labelledby="dropdownMenuButton1">
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="T4D"></a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-us" style="margin-right: 10px;"></span>EN</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-eg "style="margin-right: 10px;"></span>AR</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-es"style="margin-right: 10px;"></span>ESP</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-tr"style="margin-right: 10px;"></span>TUR</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-de"style="margin-right: 10px;"></span>GER</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-jp"style="margin-right: 10px;"></span>JPN</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-cn"style="margin-right: 10px;"></span>CHN</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-ru"style="margin-right: 10px;"></span>RUS</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-in"style="margin-right: 10px;"></span>IND</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-fr"style="margin-right: 10px;"></span>FR</a>
+                        </span>
+                        <span>
+                            <a class="dropdown-item" href="/" data-no-instant="" rel="nofollow" data-currency="AUD"><span class="fi fi-gr"style="margin-right: 10px;"></span>GR</a>
+                        </span>
+                    </ul>
+                </div>
+                </div>
+
+
+            <!--  -->
             <ul class="list-unstyled components mb-5">
                 <li class="active">
-                    <a routerLink="main"><span class="bi bi-house-door m-1"></span> Home</a>
+                    <a routerLink="main"(click)="asset()"><span class="bi bi-house-door m-1"></span> Home</a>
                 </li>
                 <li>
-                    <a routerLink="product"><span class="bi bi-film m-1"></span> Movies</a>
+                    <a routerLink="product"(click)="asset()"><span class="bi bi-film m-1"></span> Movies</a>
                 </li>
                 <li>
-                <a href="#"><span class="bi bi-display m-1"></span> Series</a>
+                <a href="#"(click)="asset()"><span class="bi bi-display m-1"></span> Series</a>
                 </li>
                 <li>
                 <a href="#"><span class="bi bi-gear m-1"></span> Programs</a>
@@ -19,17 +68,17 @@
                 <a href="#"><span class="bi bi-image-alt m-1"></span> Gallery</a>
                 </li>
                 <li>
-                <a href="#"><span class="bi bi-joystick m-1"></span> Games</a>
+                <a routerLink="game"(click)="back2()"><span class="bi bi-joystick m-1"></span> Games</a>
                 </li>
                 <li>
-                <a href="#"><span class="bi bi-clipboard2-plus m-1"></span>Blog</a>
+                <a routerLink="blog" (click)="back()"><span class="bi bi-clipboard2-plus m-1"></span>Blog</a>
                 </li>
             </ul>
-            <h3 class="h6 mb-3">Subscribe for newsletter</h3>
+            <h3 class="h6 mb-2">Subscribe for newsletter</h3>
             <form action="#" class="subscribe-form">
                 <div class="form-group d-flex">
                     <div class="icon"><span class="icon-paper-plane"></span></div>
-                    <input type="text" class="form-control" placeholder="Enter Email Address" style="margin-bottom: 20px;background-color: transparent;color:gray;border:2px solid rgb(46, 133, 155);">
+                    <input type="text" class="form-control" placeholder="Enter Email Address" style="margin-bottom: 10px;background-color: transparent;color:gray;border:2px solid rgb(46, 133, 155);">
                 </div>
                 <!-- ---------------------switch----------------------------- -->
                 <div class="form-group d-flex switcher">
@@ -42,27 +91,28 @@
                   <!-- ------------------------------------------------------- -->
             </form>
         </div>
-        <div class="footer m-3 ">
+        <div class="footer ">
                 <div class="mb-5"> 
                       <div class="dropup ">
-                          <span style="margin:0 10px 0 60px;">Alaa Eid</span>
+                          <span style="margin: 0 10px 0 80px;">Alaa Eid</span>
                         <i type="button" class="bi bi-person-circle " data-bs-toggle="dropdown" aria-expanded="false">
                           
                         </i>
                         <div aria-labelledby="dropdownBasic3"class="dropdown-menu ">
                             <div>
-                                <a href="#" class="dropdown-item py-1">
+                                <a routerLink="profile" class="dropdown-item py-1"(click)="none()">
                                     <i class="bi bi-ui-checks-grid mr-2" style="margin-right: 7px;"></i>
                                     <span>Profile</span>
                                 </a>
-                                <a href="#" class="dropdown-item py-1">
+                                <a routerLink="chat" class="dropdown-item py-1"(click)="none()">
                                     <i class="bi bi-telegram" style="margin-right: 7px;"></i>
                                     <span>Chat</span>
                                 </a>
-                                <a href="#" class="dropdown-item py-1">
+                                <a routerLink="setting" class="dropdown-item py-1"(click)="none()">
                                     <i class="bi bi-tools mr-2" style="margin-right: 7px;"></i>
                                     <span>Settings</span>
                                 </a>
+                               
                               <div class="dropdown-divider">
         
                               </div>
@@ -78,9 +128,15 @@
         </div>
     </nav>
     <div id="content" appColor class="p-5 p-md- pt-5 " style="color: wheat;">
+
         <div class="row" id="fixed">
+            <!-- ----------------------- -->
+    
+            
+    
+            <!-- ----------------------- -->
             
         </div>
             
-        <router-outlet></router-outlet>
-</div>
+            <router-outlet></router-outlet>
+        </div>

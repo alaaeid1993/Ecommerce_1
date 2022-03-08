@@ -20,4 +20,24 @@ export class AppComponent {
     }
 
   }
+  back(){
+    const bac = (<HTMLDivElement>document.getElementById("fixed")).style.backgroundImage="url('../assets/images/blog2.jpeg')"
+    const bac2 = (<HTMLDivElement>document.getElementById("fixed")).style.display="block"
+  
+  }
+  back2(){
+    const bac = (<HTMLDivElement>document.getElementById("fixed")).style.backgroundImage="url('../assets/images/gAMES.jpg')"
+    const bac2 = (<HTMLDivElement>document.getElementById("fixed")).style.display="block"
+  
+  }
+  asset(){
+    const bac = (<HTMLDivElement>document.getElementById("fixed")).style.backgroundImage="url('../assets/images/Pa.jpg')"
+    const bac2 = (<HTMLDivElement>document.getElementById("fixed")).style.display="block"
+  
+  }
+
+none(){
+  const bac = (<HTMLDivElement>document.getElementById("fixed")).style.display="none"
+}
+
 }

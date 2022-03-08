@@ -12,5 +12,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  asset(){
+    const bac = (<HTMLDivElement>document.getElementById("fixed")).style.backgroundImage="url('../assets/images/Pa.jpg')"
+  }
 }

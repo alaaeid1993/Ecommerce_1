@@ -16,13 +16,25 @@ import { SlideShowComponent } from './Components/slide-show/slide-show.component
 import { ColorDirective } from './color.directive';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BlogComponent } from './Components/blog/blog.component';
+import { ProfileComponent } from './Components/profile/profile.component';
+import { SettingComponent } from './Components/setting/setting.component';
+import { ChatComponent } from './Components/chat/chat.component';
+import { GameComponent } from './Components/game/game.component';
 
 
 let routes:Routes=[
+{path:"",component:MainComponent},
 {path:"Error",component:ErrorComponent},
 {path:"slideshow",component:SlideShowComponent},
 {path:"main",component:MainComponent},
 {path:"product",component:ProductComponent},
+{path:"blog",component:BlogComponent},
+{path:"profile",component:ProfileComponent},
+{path:"setting",component:SettingComponent},
+{path:"chat",component:ChatComponent},
+{path:"game",component:GameComponent},
+
 
 ]
 
@@ -39,7 +51,12 @@ let routes:Routes=[
     ErrorComponent,
     ContactComponent,
     SlideShowComponent,
-    ColorDirective
+    ColorDirective,
+    BlogComponent,
+    ProfileComponent,
+    SettingComponent,
+    ChatComponent,
+    GameComponent
     ],
   imports: [
     BrowserModule,
